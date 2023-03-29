@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+
+.hero {
+    width: 100%;
+    height: 100vh;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mainContainer {
+    /* background-color: brown; */
+    max-width: 1140;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.leftContent {
+    max-width: 500px;
+    margin-right: 64px;
+}
+
+.logo {
+    width: 50px;
+    border-radius: 50px;
+}
+
+.rightContent {
+    /* width: 500px;
+    height: 500px; */
+    /* background-color: blue; */
+    display: flex;
+    justify-content: flex-end;
+    margin-left: auto;
+}
+
+
+h1 {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 120%;
+    margin-bottom: 16px;
+}
+
+h4 {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 150%;
+    margin-bottom: 12px;
+}
+
+button {
+    padding: 12px 20px;
+    background-color: rgb(18, 10, 29);
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    text-transform: uppercase;
+    border-radius: 8px;
+    border: 0;
+    cursor: pointer;
+    margin-bottom: 48px;
+}
+
+h6 {
+font-size: 16px;
+font-weight: 500;
+}
+
+
+/* Calculator Style section */
+
+
+.calculator {
+    background: #3a4442;
+    padding: 20px;
+    border-radius: 8px;
+    width: max-content;
+}
+
+.calculator form input {
+    border: 0;
+    outline: 0;
+    width: 68px;
+    height: 60px;
+    border-radius: 8px;
+    box-shadow: -8px -8px 16px rgba(255, 255, 255, 0.1), 5px 5px 16px rgba( 0, 0, 9, 0.2);
+    background: transparent;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+    margin: 8px
+}
+
+form .display {
+display: flex;
+justify-content: flex-end;
+margin: 20px 0;
+}
+
+form .display input {
+   text-align: right;
+   flex: 1;
+   font-size: 44px;
+   box-shadow: none;
+}
+
+form input.equal {
+    width: 145px;
+}
+
+form input.operator {
+    color: aqua;
+}
+
+/* calculator section ends here */
+
+/* media queries starts here */
+@media screen and (max-width:
+600px) {
+
+    .hero {
+        width: 100%;
+        height: 100%;
+        background: #ffffff;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: start;
+    }
+
+    .mainContainer {
+        /* border: 1px solid red; */
+        display: flex;
+       flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 96px 16px;
+    }
+
+
+    .leftContent {
+        max-width: 500px;
+        margin-bottom: 64px;
+    }
+    
+    
+    .rightContent {
+        margin-right: auto;
+    }
+}
